@@ -5,11 +5,11 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 
-const corsOptions ={
-    origin:'https://pluto-store.onrender.com', 
-    credentials:true,            
-    optionSuccessStatus:200
-}
+// const corsOptions ={
+//     origin:'https://pluto-store.onrender.com', 
+//     credentials:true,            
+//     optionSuccessStatus:200
+// }
 
 //...............................................
 const morgan = require('morgan');
@@ -58,7 +58,7 @@ app.use(mongoSanitize())
 
 
 app.use(morgan('tiny'));
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(express.static('./public'));
 app.use(express.json());
 app.use(fileUpload({useTempFiles:true}));
