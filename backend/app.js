@@ -6,7 +6,7 @@ const app = express();
 const cors = require('cors');
 
 const corsOptions ={
-    // origin:'https://pluto-store.onrender.com', 
+    origin:'https://pluto-store.onrender.com', 
     credentials:true,            
     optionSuccessStatus:200
 }
