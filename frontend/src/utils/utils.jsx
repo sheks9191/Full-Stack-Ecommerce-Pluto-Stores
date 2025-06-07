@@ -13,9 +13,9 @@ const appUrl = 'https://pluto-ecommerce-store-backend.onrender.com/api/v2';
 
 export const customAPI = axios.create({
   baseURL:appUrl,
-  headers: {
-    "Content-Type": "application/json"
-},
+//   headers: {
+//     "Content-Type": "application/json"
+// },
   withCredentials: true
 })
 
