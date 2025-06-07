@@ -1,7 +1,7 @@
 
 import { PageIntro, WishlistContainer } from "../components"
 import { WishListWrapper } from "../styles/WishListStyles"
-import wishlistImg from '../assets/wishListImg.jpg'
+import WishListImg from '../assets/WishListImg.jpg'
 import { Link, useLoaderData } from "react-router-dom"
 import { useSelector } from "react-redux"
 import {customAPI } from "../utils/utils"
@@ -27,7 +27,7 @@ const WishList = () => {
   return (
     <WishListWrapper>
 
-        <PageIntro introText="My Wishlist" introImg={wishlistImg}/> 
+        <PageIntro introText="My Wishlist" introImg={WishListImg}/> 
         {user ? <main className="wishlist-container"><h5>{wishlists.length} product{wishlists.length > 0 && 's'} added to your list</h5></main>:<p className="text">Your wishlist has been temporarily saved. <Link to='/account/register' className="link">Create an account</Link> or <Link to="/account" className="link">sign in</Link> to save it permanently.</p>}
 
         {wishlistsData.length === 0 && <main className="wishlist-container nav-layout"><h5>Your List Is Empty</h5></main>}
