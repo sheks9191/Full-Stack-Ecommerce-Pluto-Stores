@@ -8,7 +8,7 @@ import { FaXTwitter,FaInstagram,FaFacebook,FaTiktok } from "react-icons/fa6";
 import { logoutUser } from "../features/auth/authSlice";
 
 
-const appUrl = 'http://localhost:5000/api/v2';
+const appUrl = 'https://pluto-ecommerce-store-backend.onrender.com/api/v2';
 
 
 export const customAPI = axios.create({
