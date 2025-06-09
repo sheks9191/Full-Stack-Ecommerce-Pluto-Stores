@@ -83,6 +83,15 @@ export const FaqWrapper = styled.div `
         
     }
 }
+@media (max-width:56.8rem){
+ .faq-component {
+    grid-template-columns:1fr;
+ }
 
+ .col-one {
+   flex-direction:row; 
+   flex-wrap:wrap;
+}
+}
 
 `
