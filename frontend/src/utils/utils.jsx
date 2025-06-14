@@ -156,12 +156,6 @@ export const AdminLink = [
 
 export const NavIcons = [
 
-  //  {
-  //     id:nanoid(),
-  //     icon:<CiSearch className="icon"/>,
-  //     link:'/search'
-    
-  //   },
 
       {
       id:nanoid(),
